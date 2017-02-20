@@ -1,0 +1,221 @@
+@media (max-width: 768px){
+/*categorylist.html*/
+    hr{
+        width: 100%;
+    }
+    h2{
+        margin-bottom: 30px!important;
+        font-weight: 700!important;
+    }
+    h3{
+        margin-top: 40px!important;
+        margin-bottom: 40px!important; ;
+    }
+    .up{
+        position: relative;
+        color: red;
+        bottom: 5px;
+    }
+    .circle{
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+    }
+    .img-circle{
+        background-color: #ffffff;
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+    }
+    .img-circle img{
+        width: 100%;
+    }
+    .top{
+        background-color: #fed824;
+    }
+    .footer1{
+        background-color: #ededed;
+        margin-top: 75px;
+        padding: 15px;
+    }
+    .foot2{
+        font-size: 12px;
+        font-family: "OpenSans";
+    }
+    .foot1{
+        font-size: 17px;
+    }
+    .div-shape{
+        display: flex;
+        justify-content: center;
+    }
+    .shape{
+        border: 1px solid #799fec;
+        border-radius: 30px;
+        color: #5386f0;
+        width: 400px;
+        padding: 15px;
+    }
+    .support-number{
+        color: #000;
+    }
+    .name{
+        font-weight: 700;
+    }
+    .name a{
+        color: #5386f0;
+    }
+    .support{
+        color: #9d9d9d;
+    }
+/*celebrateslist.html*/
+    .big{
+        color: #eb1919;;
+        font-size: 45px;
+        font-weight: 400;
+    }
+    .little{
+        color: #1f1f1f;
+        font-weight: 400;
+    }
+    .datedesc{
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .datedesc:after{
+        display: table;
+        content: "";
+        position: absolute;
+        right: 20px;
+        width: 15px;
+        height: 15px;
+        border-top: 3px solid #dedede;
+        border-right: 3px solid #dedede;
+        transform: rotate(45deg);
+    }
+    .bigtxt{
+        color: #195eeb;
+        font-size: 20px;
+    }
+    .littletxt{
+        color: #f7a8a8;
+        font-weight: 400;
+    }
+/*main.html*/
+    .nam{
+        color: #195eeb;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 3) {
+
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape) {
+
+}
