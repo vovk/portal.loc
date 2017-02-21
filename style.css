@@ -15,6 +15,9 @@
         margin-top: 20px!important;
         margin-bottom: 20px!important;
     }
+    input{
+        padding: 10px;
+    }
     .up{
         position: relative;
         color: red;
@@ -66,6 +69,20 @@
     .name{
         font-weight: 700;
     }
+    .col-name{
+        position: relative;
+    }
+    .col-name:before{
+        display: table;
+        content: "";
+        position: absolute;
+        right: 20px;
+        width: 15px;
+        height: 15px;
+        border-top: 3px solid #dedede;
+        border-right: 3px solid #dedede;
+        transform: rotate(45deg);
+    }
     .name a{
         color: #5386f0;
     }
@@ -113,21 +130,73 @@
         font-weight: 600;
     }
 /*category.html*/
+    .main-scrollmenu{
+        overflow-x: auto;
+    }
+    .scrollmenu{
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 15px;
+        width: auto;
+        white-space: nowrap;
+    }
+    .scrollmenu li{
+        display: inline-block;
+        font-size: 17px;
+        height: 50px;
+    }
+    .scrollmenu li a{
+        display: inline-block;
+        height: 100%;
+        padding: 0 5px;
+    }
+    .scrollmenu .active a{
+        font-weight: 600;
+        color: #000;
+        border-bottom: 3px solid #fed824;
+    }
     .music{
         display: flex;
         align-items: center;
     }
     .music-circle{
         background-color: #3473f4;
+        display: inline-block;
         height: 50px;
         width: 50px;
+    }
+    .music-circle:after{
+        display: table;
+        content: "";
+        position: relative;
+        top: 9px;
+        left: 15px;
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        border-right: 18px solid transparent;
+        border-left: 18px solid #fff;
+    }
+    .music-circle.paused:after{
+        display: block;
+        content: "";
+        position: relative;
+        top: 8px;
+        left: 8px;
+        width: 24px;
+        height: 25px;
+        border-top: none;
+        border-bottom: none;
+        border-right: 8px solid #fff;
+        border-left: 8px solid #fff;
     }
     .more{
         background-color: #195eeb;
         border: 1px solid;
         border-radius: 40px;
         color: #ffffff;
-        padding: 20px 120px;
+        padding: 20px 100px;
         text-transform: uppercase;
     }
     .mmore {
@@ -145,6 +214,249 @@
         color: #424242;
         font-size: 17px;
         font-weight: 600;
+    }
+/*page.html*/
+    .single.music-circle{
+        background-color: #3473f4;
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+    }
+    .single.music-circle.paused:after{
+        display: block;
+        content: "";
+        position: relative;
+        top: 20px;
+        left: 33px;
+        width: 24px;
+        height: 50px;
+        border-top: none;
+        border-bottom: none;
+        border-right: 8px solid #fff;
+        border-left: 8px solid #fff;
+    }
+    .bfh-phone{
+        background-color: #fff6cd!important;
+        height: 50px!important;
+        font-size: 25px!important;
+    }
+    .tel{
+        position: relative;
+    }
+    .tel p{
+        font-size: 17px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    .tel:after{
+        display: table;
+        content: "";
+        position: absolute;
+        right: 32px;
+        top: 70px;
+        width: 20px;
+        height: 12px;
+        border-top: 5px solid #7bb841;
+        border-right: 5px solid #7bb841;
+        transform: rotate(133deg);
+    }
+    .radio-left, .radio-right{
+        border: 1px solid #e4e4e4;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    .radio-left input, .radio-right input{
+        width: 40px;
+        height: 20px;
+    }
+    .radio-left span{
+        margin-left: 10px;
+    }
+    .radio-right span{
+        margin-right: 10px;
+    }
+    .select-month{
+        padding: 10px 32px 10px 10px;
+        background-color: #fff6cd;
+        border-radius: 5px;
+        border: none;
+    }
+    .select-time{
+        padding: 10px 10px 10px 10px;
+        background-color: #fff6cd;
+        border-radius: 5px;
+        border: none
+    }
+    .check-date{
+        padding-left: 0!important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bfh-phone-error{
+        border-color: #e70000!important;
+        color: #a8a8a8!important;
+    }
+    .your-tel{
+        position: relative;
+    }
+    .your-tel p{
+        font-size: 17px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    .your-tel:after{
+        content: 'Необходимо указать телефон';
+        color: #e70000;
+        font-size: 13px;
+    }
+    .send-blue{
+        background-color: #195eeb;
+        border-radius: 10px;
+        color: #ffffff;
+        font-size: 17px;
+        width: 300px;
+        height: 50px;
+        line-height: 50px;
+        margin: 20px auto!important;
+        display: block;
+    }
+/*sms.html*/
+    h2.sms-title{
+        margin-bottom: 0!important;
+    }
+    .number, .time{
+        font-size: 17px;
+    }
+    .support-number, .date-time{
+        font-weight: 600;
+    }
+    .row.main-sms{
+        margin-right: 0!important;
+        margin-left: 0!important;
+    }
+    .send-sms{
+        background-color: #fed824;
+        border-radius: 5px;
+        padding: 20px!important;
+    }
+    .sms-nmb{
+        border: 0px;
+        border-radius: 10px;
+        height: 50px;
+        width: 100%;
+    }
+    .sms-cloud{
+        position: relative;
+    }
+    .sms-cloud:before{
+
+    }
+    .sms-cloud:after{
+        content: "";
+        position: absolute;
+        top: 38px;
+        left: -8px;
+        border: 7px solid;
+        -webkit-border-bottom-left-radius: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-bottom-left-radius: 10px;
+        border-color: transparent transparent #fff transparent;
+        -webkit-transform: rotate(300deg);
+        -moz-transform: rotate(100deg);
+        transform: rotate(300deg);
+    }
+    @-moz-document url-prefix() {
+        .sms-cloud:after {
+            content: "";
+            position: absolute;
+            top: 38px;
+            left: -2px;
+            border: 7px solid;
+            border-bottom-right-radius: 0;
+            border-color: transparent transparent #fff transparent;
+            transform: rotate(93deg);
+        }
+    }
+    .sms-txt{
+        font-size: 17px;
+        margin-left: 10px;
+    }
+    .send-sms p.number{
+        font-size: 17px;
+        margin-left: 10px;
+    }
+    .loading{
+        margin-top: 10px;
+    }
+    .load img{
+        width: 50%;
+    }
+    .load-text{
+        font-size: 13px;
+        padding-right: 5px!important;
+    }
+    .col-xs-2.text-right.load{
+        padding-right: 0;
+    }
+    .quote{
+        font-size: 17px;
+        font-family: "OpenSans";
+        margin-top: 30px;
+    }
+    .choose-link{
+        background: url("img/visa.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        border: 1px solid #195eeb;
+        border-radius: 40px;
+        height: 50px;
+        display: inline-block;
+        margin: 0 auto;
+        width: 300px;
+    }
+    .choose-link-yellow{
+        background-color: #fed824;
+        border-radius: 40px;
+        color: #000;
+        height: 30px;
+        width: 300px;
+        margin: 0 auto;
+        display: block;
+        line-height: 30px;
+        margin: 0 auto;
+        width: 300px;
+        box-shadow: 0 2px 0px #a88e16;
+    }
+    .choose-questions{
+        border: 1px solid #195eeb;
+        border-radius: 40px;
+        height: 50px;
+        line-height: 50px;
+    }
+/*MKfalse*/
+    .next{
+        font-size: 17px;
+        font-weight: normal;
+        line-height: 1.2;
+    }
+    p.next span{
+        font-weight: 600;
+    }
+/*MKwait*/
+    .timer{
+        background: url(img/noaccept.jpg);
+        background-size: contain;
+        font-weight: 600;
+        font-size: 45px;
+        height: 100px;
+        line-height: 100px;
+        margin: 0 auto;
+        width: 100px;
     }
 }
 

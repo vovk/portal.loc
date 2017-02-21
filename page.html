@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <title>Аудио поздравления с Новым годом</title>
+
+    <title>Владимир Путин поздравляет с Днем Рождения в стихах!</title>
 </head>
 <body>
 <div class="container-fluid top">
@@ -19,18 +20,71 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-xs-12">
-            <h2>Аудио поздравления с Новым годом</h2>
+        <div class="col-xs-12 text-center">
+            <h2>Владимир Путин поздравляет с Днем Рождения в стихах!</h2>
         </div>
     </div>
-    <div class="row main-scrollmenu">
-        <ul class="scrollmenu">
-            <li class="active"><a href="">Прикольные</a></li>
-            <li><a href="">По именам от Путина</a></li>
-            <li><a href="">По именам</a></li>
-        </ul>
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <div class="left-block">
+                <span class="single img-circle music-circle paused"></span>
+                <div class="text-center">00:40</div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <hr>
+        </div>
     </div>
     <div class="row">
+        <div class="col-xs-12 text-center">
+            <h4>Отправить поздравление</h4>
+            <p>Поздравление будет доставлено в виде входящего звонка на телефон получателя.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 tel">
+            <p>Телефон получателя</p>
+            <input type="text" class="form-control bfh-phone" value="+380 67 543 12 11" data-format="+(1dd) dd-ddd-dd-dd">
+            <div class="col-xs-5 text-left radio-left">
+                <input type="radio" value="" name=""><span class="text-left">Доставить сейчас</span>
+            </div>
+            <div class="col-xs-2"></div>
+            <div class="col-xs-5 text-right radio-right">
+                <span>Выбрать время</span> <input type="radio" value="" name="" checked>
+            </div>
+         </div>
+        <div class="col-xs-12 check-date">
+            <div class="col-xs-5" style="padding-left:0!important;">
+                <select class="select-month">
+                    <option>23 февраля</option>
+                </select>
+            </div>
+            <div class="col-xs-1">в</div>
+            <div class="col-xs-2">
+                <select class="select-time">
+                    <option>12</option>
+                </select>
+            </div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-2">
+                <select class="select-time">
+                    <option>30</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-xs-12 your-tel">
+            <p>Ваш телефон</p>
+            <input type="text" class="form-control bfh-phone bfh-phone-error" value="+7 (___) ___-__-__" data-format="+(1dd) dd-ddd-dd-dd">
+        </div>
+        <div class="col-xs-12 text-center">
+            <a class="send-blue" href="#" style="width: 300px; margin: 0 auto; display: block;">Отправить</a>
+        </div>
+    </div>
+    <div class="row">
+        <hr>
+        <div class="col-xs-12">
+            <h4>Вам также понравятся</h4>
+        </div>
         <div class="col-xs-12 music datedesc">
             <div class="left-block">
                 <span class="img-circle music-circle paused"></span>
@@ -73,30 +127,9 @@
                 <span>Бабушка моя прекрасная, на меня ты взглянешь ласково! - песня</span>
             </div>
         </div>
-        <div class="col-xs-12">
-            <hr>
-        </div>
-        <div class="col-xs-12 music datedesc">
-            <div class="left-block">
-                <span class="img-circle music-circle"></span>
-            </div>
-            <div class="col-xs-10 bigtxt music-text">
-                <span>Бабушка моя прекрасная, на меня ты взглянешь ласково! - песня</span>
-            </div>
-        </div>
-        <div class="col-xs-12">
-            <hr>
-        </div>
     </div>
 </div>
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12 text-center mmore">
-            <a class="more" href="#">Показать еще</a>
-        </div>
-    </div>
-</div>
-<div class="container-fluid footer1">
+<div class="container-fluid footer1" style="margin-top: 50px;">
     <div class="row">
         <div class="col-xs-12 foot1 text-center">
             <p class="support">
@@ -129,9 +162,6 @@
         </div>
     </div>
 </div>
-
-
-
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>
