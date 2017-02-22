@@ -1,5 +1,18 @@
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('fonts/OpenSansRegular/opensans-regular.eot');
+    src: url('fonts/OpenSansRegular/opensans-regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/OpenSansRegular/opensans-regular.woff2') format('woff2'),
+    url('fonts/OpenSansRegular/opensans-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 @media (max-width: 768px){
 /*categorylist.html*/
+    body{
+        font-family: "Open Sans"!important;
+    }
     hr{
         width: 100%;
     }
@@ -9,7 +22,7 @@
     }
     h3{
         margin-top: 40px!important;
-        margin-bottom: 40px!important; ;
+        margin-bottom: 40px!important;
     }
     h4{
         margin-top: 20px!important;
