@@ -162,7 +162,9 @@
         align-items: center;
     }
     .music-circle{
-        background-color: #3473f4;
+        background-image: -moz-linear-gradient( 90deg, rgb(25,94,235) 0%, rgb(87,142,255) 100%);
+        background-image: -webkit-linear-gradient( 90deg, rgb(25,94,235) 0%, rgb(87,142,255) 100%);
+        background-image: -ms-linear-gradient( 90deg, rgb(25,94,235) 0%, rgb(87,142,255) 100%);
         display: inline-block;
         height: 50px;
         width: 50px;
@@ -217,7 +219,9 @@
     }
 /*page.html*/
     .single.music-circle{
-        background-color: #3473f4;
+        background-image: -moz-linear-gradient( 90deg, rgb(25,94,235) 0%, rgb(87,142,255) 100%);
+        background-image: -webkit-linear-gradient( 90deg, rgb(25,94,235) 0%, rgb(87,142,255) 100%);
+        background-image: -ms-linear-gradient( 90deg, rgb(25,94,235) 0%, rgb(87,142,255) 100%);
         display: inline-block;
         height: 100px;
         width: 100px;
@@ -459,6 +463,34 @@
         width: 100px;
     }
 /*menu.html*/
+    .test1, .test2, .test3{
+        position: relative;
+    }
+    #menu{
+        position: relative;
+        right: 40%;
+        top: 12.5px;
+    }
+    .menu-close{
+        color: #ffffff;
+        font-size: 35px;
+        position: absolute;
+        top: -15px;
+    }
+    .test img{
+        position: absolute;
+        height: 4px;
+        width: 30px;
+    }
+    .test1 img{
+        top: 0;
+    }
+    .test2 img{
+        top: 10px;
+    }
+    .test3 img{
+        top: 20px;
+    }
     .menu{
         background-color: #fed824;
         height: 100vh;
